@@ -1,4 +1,4 @@
-package wws.player;
+package wss.player;
 
 public class Player {
     

@@ -1,4 +1,4 @@
-package wws.trader;
+package wss.trader;
 
 public class GreedyTrader {
     

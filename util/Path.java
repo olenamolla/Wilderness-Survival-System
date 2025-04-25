@@ -1,4 +1,4 @@
-package wws.util;
+package wss.util;
 
 public class Path {
     

@@ -1,4 +1,4 @@
-package wws.vision;
+package wss.vision;
 
 public class ExtendedVision {
     

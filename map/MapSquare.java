@@ -1,4 +1,4 @@
-package wws.map;
+package wss.map;
 
 public class MapSquare {
     

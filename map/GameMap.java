@@ -1,5 +1,5 @@
 package wss.map;
 
-public class Terrain {
+public class GameMap {
     
 }

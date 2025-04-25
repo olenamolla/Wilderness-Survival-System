@@ -1,4 +1,4 @@
-package wws.brain;
+package wss.brain;
 
 public class SurvivalBrain {
     

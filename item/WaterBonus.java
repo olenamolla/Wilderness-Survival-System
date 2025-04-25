@@ -1,4 +1,4 @@
-package wws.item;
+package wss.item;
 
 public class WaterBonus {
     
