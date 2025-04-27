@@ -57,7 +57,7 @@ public class GameMap {
             for (int y = 0; y < height; y++) {
 
                 // Select terrain based on difficulty
-                Terrain terrain = Terrain.chooseTerrain(difficultySetting, random);
+                Terrain terrain = new Terrain(TerrainType.chooseRandomTerrain(difficultySetting, random));
                 MapSquare square = new MapSquare(terrain);
 
                 // Randomly populate square with items and trader
@@ -75,6 +75,8 @@ public class GameMap {
                 }
 
                 grid[x][y] = square;
+                System.out.println("Square (" + x + "," + y + ") has terrain: " + terrain.getTerrainType());
+
             }
         }
 
