@@ -64,7 +64,7 @@ import java.util.*;
         }
 
         // === Map Creation ===
-        map = new GameMap(width, height, difficulty);
+        gameMap = new GameMap(width, height, difficulty);
 
         // === Players ===
         System.out.println("How may players? ");
@@ -119,7 +119,7 @@ import java.util.*;
             };
 
             input.nextLine(); // consume newline
-            Player player = new Player(name, brain, vision, map, difficulty);
+            Player player = new Player(name, brain, vision, gameMap, difficulty);
             players.add(player);
 
 
