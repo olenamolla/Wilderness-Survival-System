@@ -54,7 +54,7 @@ import java.util.Map;
                       int foodRemaining, int waterRemaining, int goldCollected,
                       String brainType, String visionType,
                       int tradersMet, List<String> traderTypesEncountered,
-                      List<String> terrainsPassed, List<Integer> strengthLossPerStep,
+                      List<String> terrainsPassed, Map<String,Integer> strengthLossPerTerrain,
                       int finalStrength) {
 
         this.playerName = playerName;
@@ -68,7 +68,7 @@ import java.util.Map;
         this.tradersMet = tradersMet;
         this.traderTypesEncountered = traderTypesEncountered;
         this.terrainsPassed = terrainsPassed;
-        this.terrainStrengthLoss = terrainStrengthLoss;
+        this.terrainStrengthLoss = strengthLossPerTerrain;
         this.finalStrength = finalStrength;
     }
 

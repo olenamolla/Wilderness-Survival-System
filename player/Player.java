@@ -238,10 +238,6 @@ public class Player {
         String playerName = this.name; // Get the player's name.
         boolean reachedGoal = this.reachedGoal; // Whether the player reached the goal.
 
-        int foodRemaining = inventory.getFood(); // Final resources from inventory
-        int waterRemaining = inventory.getWater();
-        int goldCollected = inventory.getGold();
-
         String brainType = brain.getClass().getSimpleName(); // Get the brain type used
         String visionType = vision.getClass().getSimpleName(); // Get the vision type used
 
@@ -250,20 +246,19 @@ public class Player {
         int finalStrength = this.strength; // Final strength remaining at the end of the game.
 
         return new GameReport(
-            name,
+            playerName,
             turnsTaken,
-            reachedGoal,
             reachedGoal,
             inventory.getFood(),
             inventory.getWater(),
             inventory.getGold(),
-            brain.getClass().getSimpleName(),
-            vision.getClass().getSimpleName(),
+            brainType,
+            visionType,
             tradersMet,
             traderTypesEncountered,
             terrainsPassed,
             terrainStrengthLoss,
-            strength
+            finalStrength
         );
     }
 
