@@ -4,18 +4,17 @@ import java.util.List;
 import wss.map.*;
 import wss.player.*;
 import wss.vision.*;
-import wss.enums.*;
 
 //all brain types, method
 public abstract class Brain {
-    public abstract MoveDirection makemove(Map map, Player player);
+    public abstract MoveDirection makemove(GameMap map, Player player);
 }
 
 //greedybrain - priotizes routes toward gold.
 public class GreedyBrain extends Brain {
     @Override
     
-    public MoveDirection makeMove(Map map, Player player) {
+    public MoveDirection makeMove(GameMap map, Player player) {
         //all squares player can see
         List<MapSquare> visibleSquares = player.getVision().getVisibleSquares(map, player);
 

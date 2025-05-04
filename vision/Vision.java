@@ -1,6 +1,8 @@
 package wss.vision;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import wss.map.GameMap;
 import wss.player.Player;
 import wss.map.MapSquare;
