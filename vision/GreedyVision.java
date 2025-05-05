@@ -74,7 +74,7 @@ public class GreedyVision {
         // the current path of the iteration
         Path currentPath = null;
 
-        // the closest and best path to the square with food
+        // the closest and best path to the square with water
         Path optimalPath = null;
 
         MapSquare currentSquare;
@@ -83,7 +83,7 @@ public class GreedyVision {
         for (int index = 0; index < visibleSquares.size(); index++) {
             currentSquare = visibleSquares.get(index);
             
-            // if the current square has food, then evaluate whether it is the optimal path
+            // if the current square has water, then evaluate whether it is the optimal path
             if (hasWater(currentSquare)) {    // replace hasWater() with MapSquare function once it exists
                 currentPath = new Path();
                 currentPath.addStep(directions.get(index), currentSquare.getTerrain());
@@ -118,7 +118,7 @@ public class GreedyVision {
         // the current path of the iteration
         Path currentPath = null;
 
-        // the closest and best path to the square with food
+        // the closest and best path to the square with gold
         Path optimalPath = null;
 
         MapSquare currentSquare;
@@ -127,7 +127,7 @@ public class GreedyVision {
         for (int index = 0; index < visibleSquares.size(); index++) {
             currentSquare = visibleSquares.get(index);
             
-            // if the current square has food, then evaluate whether it is the optimal path
+            // if the current square has gold, then evaluate whether it is the optimal path
             if (hasGold(currentSquare)) {    // replace hasGold() with MapSquare function once it exists
                 currentPath = new Path();
                 currentPath.addStep(directions.get(index), currentSquare.getTerrain());
@@ -167,6 +167,9 @@ public class GreedyVision {
      * @return List of map squares visible the the player
      */
     public List<MapSquare> getVisibleSquares(GameMap map, Player player) {
+        // clear previous lists
+        visibleSquares.clear();
+        directions.clear();
 
         // stores square and direction for north square
         visibleSquares.add(map.getSquare(player.getX(), player.getY() - 1));
