@@ -27,7 +27,7 @@ public class CautiousVision extends Vision {
         directions = new ArrayList<>();
         squaresThatHaveFood = new ArrayList<>();
         squaresThatHaveGold = new ArrayList<>();
-        squaresThatHaveFood = new ArrayList<>();
+        squaresThatHaveWater = new ArrayList<>();
     }
 
     private boolean hasItem(MapSquare currentSquare) {
@@ -84,6 +84,9 @@ public class CautiousVision extends Vision {
      * @return List of map squares visible the the player
      */
     public List<MapSquare> getVisibleSquares(GameMap map, Player player) {
+        visibleSquares.clear();
+        directions.clear();
+        
         int[] currentPosition = player.getPosition();     // getPosition is not an available function yet
 
         // stores square and direction for north square
