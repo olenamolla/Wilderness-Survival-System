@@ -1,135 +1,76 @@
 package wss.brain;
 
 import java.util.List;
+
 import wss.map.*;
 import wss.player.*;
 import wss.vision.*;
+import wss.item.*;
 
-//all brain types, method
+/**
+ * Abstract Brain class defines the decision-making behavior for a player.
+ * All Brain types must implement a strategy for making a move.
+ */
 public abstract class Brain {
-    public abstract MoveDirection makemove(GameMap map, Player player);
-}
 
-//greedybrain - priotizes routes toward gold.
-public class GreedyBrain extends Brain {
-    @Override
-    
-    public MoveDirection makeMove(GameMap map, Player player) {
-        //all squares player can see
-        List<MapSquare> visibleSquares = player.getVision().getVisibleSquares(map, player);
+    /**
+     * Determines the next move direction based on the current map and player status.
+     *
+     * @param map The entire game map.
+     * @param player The player making the move.
+     * @return The direction the player should move (or STAY).
+     */
+    public abstract MoveDirection makeMove(GameMap map, Player player);
 
-        //keep track of best gold
-        MapSquare bestGoldSquare = null;
-        int maxGoldFound = 0;
+    /**
+     * Calculates the direction from the player to the target square.
+     *
+     * @param player The player making the move.
+     * @param target The destination square.
+     * @return The appropriate MoveDirection.
+     */
+    protected MoveDirection directionTo(Player player, MapSquare target) {
+        int dx = target.getX() - player.getX();
+        int dy = target.getY() - player.getY();
 
-        //loop through all squares visible
-        for (MapSquare square : visibleSquares) {
-            if (square.getItem() instanceof GoldBonus) {
-                if (gold.getAmount() > maxGoldFound) {
-                    maxGoldFound = gold.getAmount();
-                    bestGoldSquare = square;
-                }
-            }
+        if (dx == 0 && dy == 0) return MoveDirection.STAY;
+        if (Math.abs(dx) > Math.abs(dy)) {
+            return dx > 0 ? MoveDirection.EAST : MoveDirection.WEST;
+        } else {
+            return dy > 0 ? MoveDirection.SOUTH : MoveDirection.NORTH;
         }
-
-        //if gold square found, move toward
-        if (bestGoldSquare != null) {
-            return directionTo(player, bestGoldSquare);
-        }
-
-        //else stay in place
-        return MoveDirection.STAY;
     }
-}
 
-//survivalbrain - priotizes food/water if low
-public class SurvivalBrain extends Brain {
-    public static final int LOW_THRESHOLD = 30;
+    /**
+     * Shared fallback logic when no preferred move (like food, trader, etc.) is found.
+     * Attempts EAST first, then any legal adjacent square. Always returns a direction.
+     *
+     * @param map    The game map
+     * @param player The player making the move
+     * @param tag    A string tag for printing debug info (e.g., "SocialBrain")
+     * @return A MoveDirection that is passable, never STAY
+     */
+    protected MoveDirection fallbackDirection(GameMap map, Player player, String tag) {
+        // Step 1: Try moving EAST
+        int eastX = player.getX() + MoveDirection.EAST.getXChange();
+        int eastY = player.getY() + MoveDirection.EAST.getYChange();
+        if (map.getSquare(eastX, eastY) != null && map.getSquare(eastX, eastY).isEnterable()) {
+            System.out.println("[" + tag + "] No preferred targets — moving EAST");
+            return MoveDirection.EAST;
+        }
 
-    @Override
-    public MoveDirection makeMove(Map map, Player player) {
-        List<MapSquare> visibleSquares = player.getVision().getVisibleSquares();
-
-        //check players food/water level
-        boolean lowFood = player.getInventory().getFood() < LOW_THRESHOLD;
-        boolean lowWater = player.getInventory().getWater() < LOW_THRESHOLD;
-
-        MapSquare bestResourceSquare = null;
-        int bestBonus = 0;
-
-        //loop through visiblesquares
-        for (MapSquare square : visibleSquares) {
-            int bonus = 0;
-            
-            if (square.getItem() instanceof FoodBonus && lowFood) {
-                bonus += ((FoodBonus) square.getItem()).getAmount();
-            }
-
-            if (square.getItem() instanceof WaterBonus && lowWater) {
-                bonus += ((WaterBonus) square.getItem()).getAmount();
-            }
-
-            if (bonus > bestBonus) {
-                bestBonus = bonus;
-                bestResourceSquare = square;
-            }
-
-            if (bestResourceSquare != null) {
-                return directionTo(player, bestResourceSquare);
-            }
-
-            return MoveDirection.STAY;
-    }
-}
-
-//socialbrain - priotizes routes to traders
-public class SocialBrain extends Brain {
-    private static final int HELP_RADIUS = 5;
-
-    @Override
-    public MoveDirection makeMove(Map map, Player player) {
-        List<MapSquare> visibleSquares = player.getVision().getVisibleSquares(map, player);
-
-        MapSquare nearestPlayerSquare = null;
-        int minDistance = Integer.MAX_VALUE;
-
-        //loop through visible squares
-        for (MapSquare square : visibleSquares) {
-            if (square.getTrader() != null) {
-                int distance = calculateDistance(player, square);
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    nearestTraderSquare = square;
-                }
+        // Step 2: Try any other valid direction
+        for (MoveDirection dir : MoveDirection.values()) {
+            int tryX = player.getX() + dir.getXChange();
+            int tryY = player.getY() + dir.getYChange();
+            if (map.getSquare(tryX, tryY) != null && map.getSquare(tryX, tryY).isEnterable()) {
+                System.out.println("[" + tag + "] No EAST — moving " + dir);
+                return dir;
             }
         }
 
-        if (nearestTraderSquare != null && minDistance <= HELP_RADIUS) {
-            return directionTo(player, nearestTraderSquare);
-        }
-
-        //fallback strategy
-        Brain fallback = new SurvivialBrain();
-        return fallback.makeMove(map, player);
+        // Step 3: Emergency fallback to EAST even if blocked (will fail in Player.move())
+        System.out.println("[" + tag + "] Trapped — defaulting to EAST (even if blocked)");
+        return MoveDirection.EAST;
     }
-}
-
-//calculates direction player should move too
-private static MoveDirection directionTo(Player player, MapSquare target) {
-    int dx = target.getX() - player.getX();
-    int dy = target.getY() - player.getY();
-
-    //calculation of x and y coordinates
-    if (dx == 0 && dy == 0) return MoveDirection.STAY;
-    if (dy < 0) return MoveDirection.NORTH;
-    if (dy > 0) return MoveDirection.SOUTH;
-    if (dX < 0) return MoveDirection.EAST;
-    if (dX > 0) return MoveDirection.WEST;
-
-    return MoveDirection.STAY; 
-}
-
-//04-27 ?? reach()
-private static int calculateDistance(Player player, MapSquare square) {
-    return Math.abs(player.getX() - square.getX()) + Math.abs(player.getY() - square.getY());
 }

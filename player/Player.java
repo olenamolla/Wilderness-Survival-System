@@ -58,14 +58,14 @@ public class Player {
      * @param startFood     Initial food value
      * @param startWater    Initial water value
      */
-    public Player(String name, Vision vision, Brain brain, GameMap map, int startStrength, int startFood, int startWater) {
+    public Player(String name, Vision vision, Brain brain, GameMap map, int startStrength, int maxfood, int maxwater, int maxgold) {
         this.name = name;
         this.vision = vision;
         this.brain = brain;
         this.map = map;
         this.maxStrength = startStrength;
         this.strength = startStrength;
-        this.inventory = new Inventory();
+        this.inventory = new Inventory(maxfood, maxwater, maxgold);
         this.x = 0; // Starting position: West edge
         this.y = map.getHeight() / 2; // Center vertically
     }
@@ -77,6 +77,12 @@ public class Player {
      */
     public void takeTurn() {
         if (hasFinished()) return;
+
+        if (!hasAnyLegalMove()) {
+            finished = true;
+            System.out.println("[Player] " + name + " has no legal moves left and perished!");
+            return;
+        }
 
         turnsTaken++; // Increment the turn count
         
@@ -117,6 +123,32 @@ public class Player {
         handleBonuses(targetSquare);
         handleTrade(targetSquare);
     
+    }
+
+    /**
+    * Checks if the player can move in any direction, considering terrain and current resources.
+    * @return true if there is at least one legal move
+    */
+    public boolean hasAnyLegalMove() {
+        for (MoveDirection dir : MoveDirection.values()) {
+            int newX = x + dir.getXChange();
+            int newY = y + dir.getYChange();
+
+            MapSquare square = map.getSquare(newX, newY);
+            if (square != null && square.isEnterable()) {
+                int moveCost = square.getTerrain().getMovementCost();
+                int foodCost = square.getTerrain().getFoodCost();
+                int waterCost = square.getTerrain().getWaterCost();
+
+                // Check if all costs are affordable
+                if (strength >= moveCost &&
+                    inventory.getFood() >= foodCost &&
+                    inventory.getWater() >= waterCost) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**
