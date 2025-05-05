@@ -14,7 +14,8 @@ public enum MoveDirection {
     NORTHEAST(1, -1),
     NORTHWEST(-1, -1),
     SOUTHEAST(1, 1),
-    SOUTHWEST(-1, 1);
+    SOUTHWEST(-1, 1),
+    STAY(0, 0);
 
 
     /** Change in x-coordinate when moving in this direction */

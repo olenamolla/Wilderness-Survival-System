@@ -1,10 +1,13 @@
 package wss.vision;
 
-import java.util.List;
-
 import wss.map.GameMap;
 import wss.player.Player;
 import wss.map.MapSquare;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import wss.item.Item;
 import wss.util.Path;
 import wss.player.MoveDirection;
 

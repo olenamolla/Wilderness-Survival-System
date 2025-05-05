@@ -5,6 +5,7 @@ import wss.player.Player;
 import wss.vision.*;
 import wss.brain.*;
 
+
 import java.util.*;
 
 /**
@@ -67,13 +68,14 @@ import java.util.*;
         gameMap = new GameMap(width, height, difficulty);
 
         // === Players ===
-        System.out.println("How may players? ");
+        System.out.println("How many players? ");
         int numPlayers = input.nextInt();
         input.nextLine(); // Consume newline
 
         for(int i =0; i < numPlayers; i++){
             System.out.println("Setting up Player #" + (i+1));
             System.out.println("Enter player name: ");
+            String name = input.nextLine(); 
 
             // === Brain Selection ===
             System.out.println("Select Brain: [1] Greedy [2] Social [3] Survival");
@@ -119,7 +121,16 @@ import java.util.*;
             };
 
             input.nextLine(); // consume newline
-            Player player = new Player(name, brain, vision, gameMap, difficulty);
+
+
+            int[] res = difficulty.getInitialPlayerResources();
+            int strength = res[0];
+            int food = res[1];
+            int water = res[2];
+            int gold = 100; 
+
+
+            Player player = new Player(name, vision, brain, gameMap, strength, food, water, gold);
             players.add(player);
 
 

@@ -58,8 +58,7 @@ public class GameMap {
 
                 // Select terrain based on difficulty
                 Terrain terrain = new Terrain(TerrainType.chooseRandomTerrain(difficultySetting, random));
-                MapSquare square = new MapSquare(terrain);
-
+                MapSquare square = new MapSquare(terrain, x, y);
                 // Randomly populate square with items and trader
                 if (random.nextDouble() < difficultySetting.getFoodBonusChance()) {
                     square.addItem(new FoodBonus());

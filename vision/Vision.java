@@ -1,5 +1,18 @@
 package wss.vision;
 
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+import java.util.List;
+
+import wss.map.GameMap;
+import wss.player.Player;
+import wss.map.MapSquare;
+import wss.item.Item;
+import wss.util.Path;
+
+
+>>>>>>> origin/main
 public abstract class Vision {
     private List<MapSquare> visibleSquares;
     private List<MoveDirection> directions;
