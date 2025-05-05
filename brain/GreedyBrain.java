@@ -3,6 +3,7 @@ package wss.brain;
 import java.util.List;
 import wss.map.*;
 import wss.player.*;
+import wss.util.Path;
 
 /**
  * GreedyBrain always tries to move toward the closest square that contains gold.
@@ -22,13 +23,12 @@ public class GreedyBrain extends Brain {
     public MoveDirection makeMove(GameMap map, Player player) {
         // Ask the player's vision object to return the closest gold-containing square.
         // This method should return null if there’s no visible gold.
-        MapSquare goldSquare = player.getVision().closestGold(map, player);
+        Path goldPath = player.getVision().closestGold();
 
         // If gold was found in visible range, compute the best direction to reach it
-        if (goldSquare != null) {
-            System.out.println("[GreedyBrain] Moving toward gold at (" +
-                goldSquare.getX() + "," + goldSquare.getY() + ")");
-            return directionTo(player, goldSquare); // Move toward the gold square.
+        if (goldPath != null) {
+            System.out.println("[GreedyBrain] Moving toward gold (Path Summary): " + goldPath.getSummary());
+        return goldPath.getDirections().get(0); // First step in path
         }
         // Step 2: No gold found — use shared fallback logic
         return fallbackDirection(map, player, "GreedyBrain");

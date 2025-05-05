@@ -3,6 +3,7 @@ package wss.util;
 import java.util.ArrayList;
 import java.util.List;
 
+import wss.map.MapSquare;
 import wss.map.Terrain;
 import wss.player.MoveDirection;
 
@@ -24,6 +25,8 @@ public class Path {
 
     /** Total water cost for following the path */
     private int waterCost;
+    private List<MapSquare> visitedSquares;
+    private List<MapSquare> squares;
 
 
     /**
@@ -33,8 +36,10 @@ public class Path {
     public Path() {
         this.directions = new ArrayList<>();
         this.movementCost = 0;
+        this.visitedSquares = new ArrayList<>();    
         this.foodCost = 0;
         this.waterCost = 0;
+        this.squares = new ArrayList<>();
         System.out.println("[Path] New empty path created.");
     }
 
@@ -46,8 +51,9 @@ public class Path {
      * @param direction The direction to add (NORTH, EAST, etc.)
      * @param terrain The terrain being entered after making this move
      */
-    public void addStep(MoveDirection direction, Terrain terrain) {
+    public void addStep(MoveDirection direction, Terrain terrain, MapSquare square) {
         directions.add(direction);
+        visitedSquares.add(square);
 
         // Add terrain costs
         movementCost += terrain.getMovementCost();
@@ -96,6 +102,11 @@ public class Path {
         return waterCost;
     }
 
+
+    public MapSquare getLastSquare() {
+        if (visitedSquares.isEmpty()) return null;
+        return visitedSquares.get(visitedSquares.size() - 1);
+    }
 
     /**
      * Returns a summary of the path for display or debugging.

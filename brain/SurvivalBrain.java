@@ -1,5 +1,7 @@
 package wss.brain;
 
+import wss.util.Path;
+
 import wss.map.*;
 import wss.player.*;
 
@@ -15,17 +17,17 @@ public class SurvivalBrain extends Brain {
         @Override
         public MoveDirection makeMove(GameMap map, Player player) {
             // Step 1: Try to move toward nearest visible food
-            MapSquare foodSquare = player.getVision().closestFood(map, player);
-            if (foodSquare != null) {
-                System.out.println("[SurvivalBrain] Moving toward food at (" + foodSquare.getX() + "," + foodSquare.getY() + ")");
-                return directionTo(player, foodSquare);
+            Path foodPath = player.getVision().closestFood();
+            if (foodPath != null) {
+                System.out.println("[SurvivalBrain] Moving toward food (Path Summary): " + foodPath.getSummary());
+                return foodPath.getDirections().get(0);
             }
     
             // Step 2: Try to move toward nearest visible water
-            MapSquare waterSquare = player.getVision().closestWater(map, player);
-            if (waterSquare != null) {
-                System.out.println("[SurvivalBrain] Moving toward water at (" + waterSquare.getX() + "," + waterSquare.getY() + ")");
-                return directionTo(player, waterSquare);
+            Path waterPath = player.getVision().closestWater();
+            if (waterPath != null) {
+                System.out.println("[SurvivalBrain] Moving toward water (Path Summary): " + waterPath.getSummary());
+                return waterPath.getDirections().get(0);
             }
     
             return fallbackDirection(map, player, "SurvivalBrain");

@@ -1,5 +1,7 @@
 package wss.brain;
 
+import wss.util.Path;
+
 import wss.map.*;
 import wss.player.*;
 
@@ -12,17 +14,13 @@ public class SocialBrain extends Brain {
 
     @Override
     public MoveDirection makeMove(GameMap map, Player player) {
-        // === STEP 1: Get all visible squares ===
         var visibleSquares = player.getVision().getVisibleSquares(map, player);
-
         MapSquare closestTrader = null;
         int minDistance = Integer.MAX_VALUE;
 
-        // === STEP 2: Find the nearest visible trader ===
         for (MapSquare square : visibleSquares) {
             if (square.hasTrader()) {
                 int distance = calculateDistance(player, square);
-
                 if (distance < minDistance) {
                     minDistance = distance;
                     closestTrader = square;
@@ -30,33 +28,26 @@ public class SocialBrain extends Brain {
             }
         }
 
-        // === STEP 3: If trader found, go toward trader ===
         if (closestTrader != null) {
             System.out.println("[SocialBrain] Moving toward trader at (" +
                 closestTrader.getX() + "," + closestTrader.getY() + ")");
             return directionTo(player, closestTrader);
         }
 
-        // === STEP 4: If no trader — fallback to SurvivalBrain behavior ===
-
-        // Step 4.1: Try finding food
-        MapSquare foodSquare = player.getVision().closestFood(map, player);
-        if (foodSquare != null) {
-            System.out.println("[SocialBrain] No trader — moving toward food at (" +
-                foodSquare.getX() + "," + foodSquare.getY() + ")");
-            return directionTo(player, foodSquare);
+        // === STEP 4: Use Path instead of MapSquare ===
+        Path foodPath = player.getVision().closestFood();
+        if (foodPath != null && !foodPath.getDirections().isEmpty()) {
+            System.out.println("[SocialBrain] No trader — moving toward food (Path Summary): " + foodPath.getSummary());
+            return foodPath.getDirections().get(0); // First step in path
         }
 
-        // Step 4.2: Try finding water
-        MapSquare waterSquare = player.getVision().closestWater(map, player);
-        if (waterSquare != null) {
-            System.out.println("[SocialBrain] No trader/food — moving toward water at (" +
-                waterSquare.getX() + "," + waterSquare.getY() + ")");
-            return directionTo(player, waterSquare);
+        Path waterPath = player.getVision().closestWater();
+        if (waterPath != null && !waterPath.getDirections().isEmpty()) {
+            System.out.println("[SocialBrain] No trader/food — moving toward water (Path Summary): " + waterPath.getSummary());
+            return waterPath.getDirections().get(0);
         }
 
         return fallbackDirection(map, player, "SocialBrain");
-
     }
 
     /**

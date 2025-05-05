@@ -68,6 +68,23 @@ public class MapSquare {
         System.out.println("[MapSquare] Item added: " + item.getName());
     }
 
+
+    /**
+    * Checks if this square contains an item with the given name.
+    *
+    * @param itemName The name of the item to look for (e.g., "Gold Bonus")
+    * @return true if an item with that name exists in the square
+    */
+    public boolean hasItemOfType(String itemName) {
+        for (Item item : items) {
+            if (item.getName().equals(itemName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     /**
      * Removes an item from this square.
      * @param item The item to remove
