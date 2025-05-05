@@ -17,6 +17,8 @@ import wss.trader.Trader;
 public class MapSquare {
     // === Attributes ===
 
+    private int x;
+    private int y;
     /** The type of terrain in this square (e.g., Plains, Mountain, etc.) */
     private Terrain terrain;
 
@@ -35,11 +37,13 @@ public class MapSquare {
      *
      * @param terrain The terrain type for this square.
      */
-    public MapSquare(Terrain terrain) {
+    public MapSquare(Terrain terrain, int x, int y) {
         this.terrain = terrain;
         this.items = new ArrayList<>(); // We use an ArrayList to store items because it's fast and easy to manage.
         this.trader = null; // No trader initially
-        System.out.println("[MapSquare] New square created with terrain: " + terrain.getName());
+        this.x = x;
+        this.y = y;
+        System.out.println("[MapSquare] New square created at (" + x + "," + y + ") with terrain: " + terrain.getTerrainType());
     }
 
 
@@ -91,6 +95,14 @@ public class MapSquare {
     public void setTrader(Trader trader) {
         this.trader = trader;
         System.out.println("[MapSquare] Trader set: " + trader.getName());
+    }
+
+    public int getX() {
+        return x;
+    }
+    
+    public int getY() {
+        return y;
     }
 
     /**

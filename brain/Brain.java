@@ -1,11 +1,9 @@
 package wss.brain;
 
-import java.util.List;
+
 
 import wss.map.*;
 import wss.player.*;
-import wss.vision.*;
-import wss.item.*;
 
 /**
  * Abstract Brain class defines the decision-making behavior for a player.
