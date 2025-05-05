@@ -42,6 +42,7 @@ public class CautiousVision extends Vision {
      * 
      * @return Path object containing the best path to food
      */
+    @Override
     public Path closestFood() {
         // contains the square that will take the least accumulated cost (movement + gold + water) to get to
         int bestTotalCost = Integer.MAX_VALUE;
@@ -83,6 +84,7 @@ public class CautiousVision extends Vision {
      * @param player The player in the game
      * @return List of map squares visible the the player
      */
+    @Override
     public List<MapSquare> getVisibleSquares(GameMap map, Player player) {
         visibleSquares.clear();
         directions.clear();
