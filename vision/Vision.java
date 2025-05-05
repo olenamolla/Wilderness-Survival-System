@@ -1,15 +1,8 @@
 package wss.vision;
 
-import java.util.ArrayList;
-import wss.map.GameMap;
-import wss.player.Player;
-import wss.map.MapSquare;
-import wss.item.Item;
-import wss.util.Path;
-
-
 public abstract class Vision {
     private List<MapSquare> visibleSquares;
+    private List<MoveDirection> directions;
     private List<MapSquare> squaresThatHaveGold;
     private List<MapSquare> squaresThatHaveWater;
     private List<MapSquare> squaresThatHaveFood;
