@@ -3,13 +3,12 @@ package wss.vision;
 import wss.map.GameMap;
 import wss.player.Player;
 import wss.map.MapSquare;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import wss.item.Item;
 import wss.util.Path;
 import wss.player.MoveDirection;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // CautiousVision scans only the adjacent squares (North, East, South). 
 // Prioritizes moving to squares that are close and safe. 
