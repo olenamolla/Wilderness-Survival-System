@@ -65,7 +65,7 @@ public class ExtendedVision {
         // iterates over each visible square to look for the optimal path
         for (int index = 0; index < visibleSquares.size(); index++) {
             currentSquare = visibleSquares.get(index);
-            currentDistance = Math.min(currentPosition[0] - currentSquare.getX(), currentPosition[1] - currentSquare.getY());
+            currentDistance = Math.abs(currentPosition[0] - currentSquare.getX()) + Math.abs(currentPosition[1] - currentSquare.getY());
 
             // ensure distance is always positive since this is only supposed to represent how far a square is from a player,
             // not also its direction
@@ -107,10 +107,10 @@ public class ExtendedVision {
     }
 
     /**
-     * Returns the path to the closest food. If there are more than one
+     * Returns the path to the closest water. If there are more than one
      * path that is the same distance, this method chooses the path that
-     * leads to more food. If there are multiple paths that are the same
-     * distance and have the same amount of food, choose path randomly.
+     * leads to more water. If there are multiple paths that are the same
+     * distance and have the same amount of water, choose path randomly.
      * 
      * @return Path object containing the best path to food
      */
@@ -187,10 +187,10 @@ public class ExtendedVision {
     }
     
         /**
-     * Returns the path to the closest food. If there are more than one
+     * Returns the path to the closest gold. If there are more than one
      * path that is the same distance, this method chooses the path that
-     * leads to more food. If there are multiple paths that are the same
-     * distance and have the same amount of food, choose path randomly.
+     * leads to more gold. If there are multiple paths that are the same
+     * distance and have the same amount of gold, choose path randomly.
      * 
      * @return Path object containing the best path to food
      */
