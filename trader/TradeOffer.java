@@ -72,6 +72,14 @@ public class TradeOffer {
         return goldRequested;
     }
 
+    public int getOfferedValue() {
+        return foodOffered + waterOffered + (goldOffered * 2);
+    }
+    
+    public int getRequestedValue() {
+        return foodRequested + waterRequested + (goldRequested * 2);
+    }
+    
     /**
      * Prints the details of the trade offer to the console.
      * Useful for debugging and showing the trade to the player.

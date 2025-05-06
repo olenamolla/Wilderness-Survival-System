@@ -1,12 +1,12 @@
 package wss.trader;
 
-// import wss.trader.TradeOffer;
-
 public abstract class Trader {
     protected int tradesRemaining;
     protected Range foodRange;
     protected Range waterRange;
     protected Range goldRange;
+
+    protected TradeOffer currentOffer;
 
     public Trader(int tradesRemaining, Range foodRange, Range waterRange, Range goldRange) {
         this.tradesRemaining = tradesRemaining;
@@ -16,38 +16,45 @@ public abstract class Trader {
     }
 
     /**
-     * Generates a trade offer based on each resource (type varies) range.
-     * Decrements (-) tradesRemaining and returns null for none.
+     * Generate and store a TradeOffer. Decrease tradesRemaining.
      */
     public TradeOffer offerTrade() {
-        if (tradesRemaining <= 0) {
-            return null;
-        }
+        if (tradesRemaining <= 0) return null;
         tradesRemaining--;
-        int fOff = foodRange.getRandomValue();
-        int wOff = waterRange.getRandomValue();
-        int gOff = goldRange.getRandomValue();
-        int fReq = foodRange.getRandomValue();
-        int wReq = waterRange.getRandomValue();
-        int gReq = goldRange.getRandomValue();
-        return new TradeOffer(fOff, wOff, gOff, fReq, wReq, gReq);
+
+        this.currentOffer = new TradeOffer(
+            foodRange.getRandomValue(),
+            waterRange.getRandomValue(),
+            goldRange.getRandomValue(),
+            foodRange.getRandomValue(),
+            waterRange.getRandomValue(),
+            goldRange.getRandomValue()
+        );
+        return currentOffer;
     }
 
     /**
-     *  deciding whether to accept a counter-offer.
-     * @param offer the player's TradeOffer
-     * @return true if Trader accepts, false is opposite
+     * Decide whether to accept a counter-offer.
+     * Default logic: accept if player's offer >= our demand.
      */
-    public abstract boolean acceptTrade(TradeOffer offer);
+    public boolean acceptTrade(TradeOffer counter) {
+        if (currentOffer == null) return false;
+
+        int offered = counter.getOfferedValue();
+        int requested = currentOffer.getRequestedValue();
+
+        return offered >= requested;
+    }
 
     public int getTradesRemaining() {
         return tradesRemaining;
     }
 
-    /**
-     * @return a simple msg of remaining trades (for player)
-     */
     public String getTradeStatus() {
         return "Trades remaining: " + tradesRemaining;
+    }
+
+    public TradeOffer getCurrentOffer() {
+        return currentOffer;
     }
 }
