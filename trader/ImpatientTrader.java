@@ -1,41 +1,36 @@
 package wss.trader;
 
-// ImpatientTrader makes normal offers. 
-// Will quit trading if the Player makes too many counteroffers. 
-// Accepts good counteroffers early but quits after being annoyed.
-
+/**
+ * ImpatientTrader makes normal offers but gets annoyed quickly.
+ * Will reject trade after 3 failed counteroffers.
+ */
 public class ImpatientTrader extends Trader {
-    
+
     private int counterOffersSeen;
-    private final int maxCounterOffers = 3; // Max counteroffers that Impatient player is willing to wait for
+    private final int maxCounterOffers = 3;
 
     public ImpatientTrader(int tradesRemaining, Range foodRange, Range waterRange, Range goldRange) {
         super(tradesRemaining, foodRange, waterRange, goldRange);
         this.counterOffersSeen = 0;
     }
 
-    /**
-     * Accepts if offer is fair or equal.
-     * Otherwise -> more annoyance and high chance of the player to stop trading.
-     *
-     * @param offer the TradeOffer 
-     * @return true if accepted, false is opposite
-     */
     @Override
-    public boolean acceptTrade(TradeOffer offer) {
+    public boolean acceptTrade(TradeOffer playerCounter) {
+        if (currentOffer == null) return false;
+
         if (counterOffersSeen >= maxCounterOffers) {
-            System.out.println("[ImpatientTrader] no longer wants to trade. Way too many counteroffers!");
+            System.out.println("[ImpatientTrader] No longer interested. Too many counteroffers.");
             return false;
         }
 
-        int offerValue = offer.getFoodOffered() + offer.getWaterOffered() + offer.getGoldOffered();
-        int requestValue = offer.getFoodRequested() + offer.getWaterRequested() + offer.getGoldRequested();
+        int playerValue = playerCounter.getOfferedValue();
+        int traderValue = currentOffer.getRequestedValue();
 
-        if (offerValue >= requestValue) {
-            return true;
+        if (playerValue >= traderValue) {
+            return true; // Accept fair or better counter
         } else {
             counterOffersSeen++;
-            System.out.println("[ImpatientTrader] rejected offer #" + counterOffersSeen);
+            System.out.println("[ImpatientTrader] Offer rejected (" + counterOffersSeen + "/" + maxCounterOffers + ")");
             return false;
         }
     }
