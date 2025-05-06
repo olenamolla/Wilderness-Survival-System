@@ -8,10 +8,15 @@ package wss.map;
 
 import java.util.Random;
 
+import wss.trader.Range;
+
 import wss.game.DifficultySettings;
 import wss.item.FoodBonus;
 import wss.item.GoldBonus;
 import wss.item.WaterBonus;
+import wss.trader.GreedyTrader;
+import wss.trader.ImpatientTrader;
+import wss.trader.RegularTrader;
 import wss.trader.Trader;
 
 public class GameMap {
@@ -70,7 +75,20 @@ public class GameMap {
                     square.addItem(new GoldBonus());
                 }
                 if (random.nextDouble() < difficultySetting.getTraderChance()) {
-                    square.setTrader(new Trader());
+                    int type = random.nextInt(3);
+                    Range food = difficultySetting.getFoodTradeRange();
+                    Range water = difficultySetting.getWaterTradeRange();
+                    Range gold = difficultySetting.getGoldTradeRange();
+                    int trades = 3;
+
+                    Trader trader = switch (type) {
+                        case 0 -> new RegularTrader(trades, food, water, gold);
+                        case 1 -> new ImpatientTrader(trades, food, water, gold);
+                        case 2 -> new GreedyTrader(trades, food, water, gold);
+                        default -> new RegularTrader(trades, food, water, gold);
+                    };
+
+                    square.setTrader(trader);
                 }
 
                 grid[x][y] = square;

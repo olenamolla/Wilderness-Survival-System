@@ -2,7 +2,7 @@ package wss.game;
 
 
 import java.util.List;
-import wss.map.GameMap;
+
 import java.util.Map;
 
 /**

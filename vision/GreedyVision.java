@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import wss.map.GameMap;
-import wss.map.Terrain;
+
 import wss.player.Player;
 import wss.map.MapSquare;
-import wss.item.Item;
+
 import wss.util.Path;
 import wss.player.MoveDirection;
 

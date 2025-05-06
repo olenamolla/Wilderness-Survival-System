@@ -57,4 +57,8 @@ public abstract class Trader {
     public TradeOffer getCurrentOffer() {
         return currentOffer;
     }
+
+    public String getName() {
+        return this.getClass().getSimpleName(); // e.g., returns "RegularTrader"
+    }
 }

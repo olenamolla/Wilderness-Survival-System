@@ -1,5 +1,7 @@
 package wss.game;
 
+import wss.trader.Range;
+
 /**
  * Enum representing the difficulty settings in the Wilderness Survival System (WSS).
  * Each level defines how resourceful or harsh the game environment will be.
@@ -17,15 +19,18 @@ public enum DifficultySettings {
  
     EASY(
         0.6, 0.4, 0.4, new int[]{25, 20, 20},
-        0.5, 0.4, 0.3, 0.25
+        0.5, 0.4, 0.3, 0.25,
+        new Range(1, 3), new Range(1, 2), new Range(0, 2)
     ),
     MEDIUM(
         0.4, 0.3, 0.3, new int[]{20, 15, 15},
-        0.3, 0.2, 0.2, 0.15
+        0.3, 0.2, 0.2, 0.15,
+        new Range(1, 2), new Range(1, 1), new Range(0, 1)
     ),
     HARD(
         0.2, 0.2, 0.1, new int[]{15, 10, 10},
-        0.15, 0.1, 0.1, 0.05
+        0.15, 0.1, 0.1, 0.05,
+        new Range(0, 1), new Range(0, 1), new Range(0, 1)
     );
 
     // === Difficulty Attributes ===
@@ -40,6 +45,10 @@ public enum DifficultySettings {
     private final double goldBonusChance;
     private final double traderChance;
 
+    private final Range foodTradeRange;
+    private final Range waterTradeRange;
+    private final Range goldTradeRange;
+
     /**
      * Constructor for difficulty level constants.
      *
@@ -48,7 +57,7 @@ public enum DifficultySettings {
      * @param traderFrequency  Probability of traders appearing
      * @param initialResources Initial resources: strength, food, water
      */
-    DifficultySettings(double plainsRatio, double itemSpawnRate, double traderFrequency, int[] initialResources, double foodBonusChance, double waterBonusChance, double goldBonusChance, double traderChance) {
+    DifficultySettings(double plainsRatio, double itemSpawnRate, double traderFrequency, int[] initialResources, double foodBonusChance, double waterBonusChance, double goldBonusChance, double traderChance,Range foodTradeRange, Range waterTradeRange, Range goldTradeRange) {
         this.plainsRatio = plainsRatio;
         this.itemSpawnRate = itemSpawnRate;
         this.traderFrequency = traderFrequency;
@@ -57,6 +66,9 @@ public enum DifficultySettings {
         this.waterBonusChance = waterBonusChance;
         this.goldBonusChance = goldBonusChance;
         this.traderChance = traderChance;
+        this.foodTradeRange = foodTradeRange;
+        this.waterTradeRange = waterTradeRange;
+        this.goldTradeRange = goldTradeRange;
     }
 
 
@@ -118,6 +130,17 @@ public enum DifficultySettings {
         return traderChance;
     }
     
+    public Range getFoodTradeRange() {
+        return foodTradeRange;
+    }
+
+    public Range getWaterTradeRange() {
+        return waterTradeRange;
+    }
+    
+    public Range getGoldTradeRange() {
+        return goldTradeRange;
+    }
 
     /**
      * Prints the difficulty settings and starting values to the terminal.

@@ -1,8 +1,10 @@
 package wss.brain;
 
-import java.util.List;
+
 import wss.map.*;
 import wss.player.*;
+import wss.trader.TradeOffer;
+import wss.trader.Trader;
 import wss.util.Path;
 
 /**
@@ -33,4 +35,41 @@ public class GreedyBrain extends Brain {
         // Step 2: No gold found — use shared fallback logic
         return fallbackDirection(map, player, "GreedyBrain");
     }
+
+
+    @Override
+    public void initiateTrade(Player player, Trader trader) {
+        // Step 1: Ask the trader for their current trade offer
+        TradeOffer offer = trader.offerTrade();
+
+        // Step 2: If the trader has no more offers, exit early
+        if (offer == null) {
+            System.out.println("[GreedyBrain] Trader has no offers left.");
+            return;
+        }
+
+        // Step 3: Print out the offer details (for logging/debugging)
+        offer.printOffer();
+
+        // Step 4: Greedy logic — accept only if gain is at least double the cost
+        int gain = offer.getOfferedValue();     // What the player would get
+        int cost = offer.getRequestedValue();   // What the player would give up
+
+        // Step 5: Evaluate whether this is a "greedy-approved" trade
+        if (gain >= cost * 2) {
+            System.out.println("[GreedyBrain] Accepting trade. Gain (" + gain + ") is >= 2x cost (" + cost + ")");
+            // Spend the requested resources
+            player.getInventory().spendFood(offer.getFoodRequested());
+            player.getInventory().spendWater(offer.getWaterRequested());
+            player.getInventory().spendGold(offer.getGoldRequested());
+
+            // Gain the offered resources
+            player.increaseFood(offer.getFoodOffered());
+            player.increaseWater(offer.getWaterOffered());
+            player.increaseGold(offer.getGoldOffered());
+        } else {
+            System.out.println("[GreedyBrain] Rejecting trade. Not greedy enough.");
+        }
+    }
+
 }

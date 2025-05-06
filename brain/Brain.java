@@ -4,6 +4,7 @@ package wss.brain;
 
 import wss.map.*;
 import wss.player.*;
+import wss.trader.Trader;
 
 /**
  * Abstract Brain class defines the decision-making behavior for a player.
@@ -71,4 +72,7 @@ public abstract class Brain {
         System.out.println("[" + tag + "] Trapped — defaulting to EAST (even if blocked)");
         return MoveDirection.EAST;
     }
+
+    public abstract void initiateTrade(Player player, Trader trader);
+
 }

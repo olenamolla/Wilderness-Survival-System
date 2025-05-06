@@ -143,6 +143,34 @@ public class Inventory {
         maxGold = value;
     }
 
+
+    /**
+    * Checks if the inventory has enough food.
+    * @param amount Amount of food to check
+    * @return true if food >= amount
+    */
+    public boolean hasEnoughFood(int amount) {
+        return food >= amount;
+    }
+
+    /**
+    * Checks if the inventory has enough water.
+    * @param amount Amount of water to check
+    * @return true if water >= amount
+    */
+    public boolean hasEnoughWater(int amount) {
+        return water >= amount;
+    }
+
+    /**
+    * Checks if the inventory has enough gold.
+    * @param amount Amount of gold to check
+    * @return true if gold >= amount
+    */
+    public boolean hasEnoughGold(int amount) {
+        return gold >= amount;
+    }
+
     // === Getters for Max Values ===
     public int getMaxFood() { return maxFood; }
     public int getMaxWater() { return maxWater; }

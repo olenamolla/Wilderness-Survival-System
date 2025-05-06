@@ -8,7 +8,6 @@ import wss.map.MapSquare;
 import wss.map.Terrain;
 import wss.trader.Trader;
 import wss.vision.Vision;
-import wss.player.Inventory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
