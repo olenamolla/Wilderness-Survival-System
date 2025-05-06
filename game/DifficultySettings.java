@@ -18,17 +18,17 @@ import wss.trader.Range;
 public enum DifficultySettings {
  
     EASY(
-        0.6, 0.4, 0.4, new int[]{25, 20, 20},
+        0.6, 0.4, 0.4, new int[]{50, 20, 20},
         0.5, 0.4, 0.3, 0.25,
         new Range(1, 3), new Range(1, 2), new Range(0, 2)
     ),
     MEDIUM(
-        0.4, 0.3, 0.3, new int[]{20, 15, 15},
+        0.4, 0.3, 0.3, new int[]{45, 15, 15},
         0.3, 0.2, 0.2, 0.15,
         new Range(1, 2), new Range(1, 1), new Range(0, 1)
     ),
     HARD(
-        0.2, 0.2, 0.1, new int[]{15, 10, 10},
+        0.2, 0.2, 0.1, new int[]{30, 10, 10},
         0.15, 0.1, 0.1, 0.05,
         new Range(0, 1), new Range(0, 1), new Range(0, 1)
     );

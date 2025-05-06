@@ -65,7 +65,11 @@ import java.util.*;
         }
 
         // === Map Creation ===
+        System.out.println("[DEBUG] Creating new GameMap...");
         gameMap = new GameMap(width, height, difficulty);
+        System.out.println("[DEBUG] About to print map from setup()...");
+        gameMap.printMap(); // Print the map after creation
+        System.out.println("[DEBUG] Map printed from setup()");
 
         // === Players ===
         System.out.println("How many players? ");
@@ -138,11 +142,17 @@ import java.util.*;
 
     }
 
+    public void printMap() {
+        gameMap.printMap(); // Delegates the task to the GameMap
+    }
+    
+
     /**
      * Main simulation loop.
      */
     public void run() {
         System.out.println("\nStarting the simulation...");
+        printMap(); // Print initial map state
 
         boolean gameRunning = true;
         while (gameRunning) {

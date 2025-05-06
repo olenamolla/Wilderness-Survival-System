@@ -13,6 +13,7 @@ import wss.trader.Range;
 import wss.game.DifficultySettings;
 import wss.item.FoodBonus;
 import wss.item.GoldBonus;
+import wss.item.Item;
 import wss.item.WaterBonus;
 import wss.trader.GreedyTrader;
 import wss.trader.ImpatientTrader;
@@ -60,7 +61,6 @@ public class GameMap {
 
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
-
                 // Select terrain based on difficulty
                 Terrain terrain = new Terrain(TerrainType.chooseRandomTerrain(difficultySetting, random));
                 MapSquare square = new MapSquare(terrain, x, y);
@@ -92,13 +92,76 @@ public class GameMap {
                 }
 
                 grid[x][y] = square;
-                System.out.println("Square (" + x + "," + y + ") has terrain: " + terrain.getTerrainType());
-
             }
         }
 
         System.out.println("[GameMap] Map generation complete.");
     }
+
+    public void printMap() {
+        System.out.println("[DEBUG] Entering GameMap.printMap()");
+        System.out.flush();
+        System.out.println("\n\n");
+        System.out.flush();
+        System.out.println("==========================================");
+        System.out.flush();
+        System.out.println("                MAP VIEW                  ");
+        System.out.flush();
+        System.out.println("==========================================");
+        System.out.flush();
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                MapSquare square = grid[x][y];
+
+                // Terrain code (2-letter abbreviation)
+                String terrainCode = switch (square.getTerrain().getTerrainType()) {
+                    case PLAINS -> "PL";
+                    case MOUNTAIN -> "MO";
+                    case FOREST -> "FO";
+                    case DESERT -> "DE";
+                    case SWAMP -> "SW";
+                };
+
+                // Bonus codes (max 1 shown, or more if you want)
+                String bonusCode = "-";
+                for (Item item : square.getItems()) {
+                    if (item.getName().contains("Food")) { bonusCode = "F"; break; }
+                    if (item.getName().contains("Water")) { bonusCode = "W"; break; }
+                    if (item.getName().contains("Gold")) { bonusCode = "G"; break; }
+                }
+
+                // Trader code (2-letter)
+                String traderCode = "--";
+                if (square.hasTrader()) {
+                    String name = square.getTrader().getClass().getSimpleName();
+                    if (name.contains("Greedy")) traderCode = "TG";
+                    else if (name.contains("Impatient")) traderCode = "TI";
+                    else if (name.contains("Regular")) traderCode = "TR";
+                }
+
+                // Print formatted square
+                System.out.print(String.format("%s-%s-%s | ", terrainCode, bonusCode, traderCode));
+                System.out.flush();
+            }
+            System.out.println(); // Newline per row
+            System.out.flush();
+        }
+        System.out.println("==========================================");
+        System.out.flush();
+        System.out.println("Legend:");
+        System.out.flush();
+        System.out.println("Terrain: PL=Plains, MO=Mountain, FO=Forest, DE=Desert, SW=Swamp");
+        System.out.flush();
+        System.out.println("Bonus: F=Food, W=Water, G=Gold");
+        System.out.flush();
+        System.out.println("Trader: TG=Greedy, TI=Impatient, TR=Regular");
+        System.out.flush();
+        System.out.println("==========================================\n\n");
+        System.out.flush();
+        System.out.println("[DEBUG] Exiting GameMap.printMap()");
+        System.out.flush();
+    }
+
 
      /**
      * Retrieves the MapSquare at a specific coordinate.

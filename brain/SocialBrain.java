@@ -16,12 +16,14 @@ public class SocialBrain extends Brain {
 
     @Override
     public MoveDirection makeMove(GameMap map, Player player) {
+        
+      try {  
         var visibleSquares = player.getVision().getVisibleSquares(map, player);
         MapSquare closestTrader = null;
         int minDistance = Integer.MAX_VALUE;
 
         for (MapSquare square : visibleSquares) {
-            if (square.hasTrader()) {
+            if (square != null && square.hasTrader()) {
                 int distance = calculateDistance(player, square);
                 if (distance < minDistance) {
                     minDistance = distance;
@@ -50,6 +52,10 @@ public class SocialBrain extends Brain {
         }
 
         return fallbackDirection(map, player, "SocialBrain");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return MoveDirection.EAST; // fail-safe
+        }
     }
 
     /**
