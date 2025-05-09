@@ -333,6 +333,17 @@ public class ExtendedVision extends Vision {
         listOfSequencesOfDirections.add(sequenceOfDirections);
         listOfSequencesOfSquares.add(sequenceOfSquares);
 
+        // stores square and directions for north east -> east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 2, player.getY() - 1));
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() - 1));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
         // stores square and direction for east -> east square
         sequenceOfDirections = new ArrayList<>();
         sequenceOfSquares = new ArrayList<>();
@@ -340,6 +351,28 @@ public class ExtendedVision extends Vision {
         sequenceOfDirections.add(MoveDirection.EAST);
         sequenceOfDirections.add(MoveDirection.EAST);
         sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for north east -> south east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for south east -> north east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() + 1));
         sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
         listOfSequencesOfDirections.add(sequenceOfDirections);
         listOfSequencesOfSquares.add(sequenceOfSquares);
@@ -355,6 +388,17 @@ public class ExtendedVision extends Vision {
         listOfSequencesOfDirections.add(sequenceOfDirections);
         listOfSequencesOfSquares.add(sequenceOfSquares);
 
+        // stores square and direction for south east -> east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 2, player.getY() + 1));
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() + 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() + 1));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
         // stores square and direction for east -> east -> east square
         sequenceOfDirections = new ArrayList<>();
         sequenceOfSquares = new ArrayList<>();
@@ -364,6 +408,84 @@ public class ExtendedVision extends Vision {
         sequenceOfDirections.add(MoveDirection.EAST);
         sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY()));
         sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for east -> north east -> south east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for north east -> south east -> east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for north east -> east -> south east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() - 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for east -> south east -> north east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() + 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for south east -> north east -> east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() + 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY()));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        listOfSequencesOfDirections.add(sequenceOfDirections);
+        listOfSequencesOfSquares.add(sequenceOfSquares);
+
+        // stores square and direction for south east -> east -> north east square
+        sequenceOfDirections = new ArrayList<>();
+        sequenceOfSquares = new ArrayList<>();
+        visibleSquares.add(map.getSquare(player.getX() + 3, player.getY()));
+        sequenceOfDirections.add(MoveDirection.SOUTHEAST);
+        sequenceOfDirections.add(MoveDirection.EAST);
+        sequenceOfDirections.add(MoveDirection.NORTHEAST);
+        sequenceOfSquares.add(map.getSquare(player.getX() + 1, player.getY() + 1));
+        sequenceOfSquares.add(map.getSquare(player.getX() + 2, player.getY() + 1));
         sequenceOfSquares.add(map.getSquare(player.getX() + 3, player.getY()));
         listOfSequencesOfDirections.add(sequenceOfDirections);
         listOfSequencesOfSquares.add(sequenceOfSquares);
