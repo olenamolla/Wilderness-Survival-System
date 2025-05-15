@@ -27,6 +27,7 @@ public class ExtendedVision extends Vision {
     public ExtendedVision() {
         super();
         this.listOfSequencesOfDirections = new ArrayList<>();
+        this.listOfSequencesOfSquares = new ArrayList<>();
         this.currentPosition = new int[2];
     }
 
@@ -290,6 +291,11 @@ public class ExtendedVision extends Vision {
      * @return List of map squares visible the the player
      */
     public List<MapSquare> getVisibleSquares(GameMap map, Player player) {
+        // Clear previous data
+        visibleSquares.clear();
+        listOfSequencesOfDirections.clear();
+        listOfSequencesOfSquares.clear();
+        
         List<MoveDirection> sequenceOfDirections;
         List<MapSquare> sequenceOfSquares;
         currentPosition[0] = player.getX();

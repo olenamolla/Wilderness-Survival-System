@@ -15,6 +15,8 @@ public class Range {
     /** Maximum value in the range (inclusive) */
     private int max;
 
+    private static final Random random = new Random();
+
     /**
      * Creates a new Range with a specified minimum and maximum.
      * 
@@ -26,9 +28,9 @@ public class Range {
         if (min > max) {
             throw new IllegalArgumentException("[Range] Error: min cannot be greater than max.");
         }
-        this.min = min;
-        this.max = max;
-        System.out.println("[Range] Created Range from " + min + " to " + max);
+        // Ensure minimum value is at least 1 for meaningful trades
+        this.min = Math.max(1, min);
+        this.max = Math.max(this.min, max);
     }
 
     /**
@@ -43,9 +45,7 @@ public class Range {
     // - The Trader will use this method to check if the Player's offer/request is acceptable.
     // Player -> Trader 
     public boolean contains(int value) {
-        boolean result = (value >= min && value <= max);
-        System.out.println("[Range] Checking if value " + value + " is in range [" + min + ", " + max + "]: " + result);
-        return result;
+        return value >= min && value <= max;
     }
 
     /**
@@ -57,10 +57,7 @@ public class Range {
     // - When the Trader generates a new trade offer to propose to the Player.
     // Trader -> Player
     public int getRandomValue() {
-        Random random = new Random();
-        int result = random.nextInt(max - min + 1) + min;
-        System.out.println("[Range] Generated random value: " + result + " from range [" + min + ", " + max + "]");
-        return result;
+        return random.nextInt(max - min + 1) + min;
     }
 
     /**

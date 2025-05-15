@@ -5,14 +5,20 @@ public abstract class Trader {
     protected Range foodRange;
     protected Range waterRange;
     protected Range goldRange;
+    protected Range requestFoodRange;
+    protected Range requestWaterRange;
+    protected Range requestGoldRange;
 
     protected TradeOffer currentOffer;
 
     public Trader(int tradesRemaining, Range foodRange, Range waterRange, Range goldRange) {
         this.tradesRemaining = tradesRemaining;
-        this.foodRange = foodRange;
-        this.waterRange = waterRange;
-        this.goldRange = goldRange;
+        this.foodRange = foodRange != null ? foodRange : new Range(1, 3);
+        this.waterRange = waterRange != null ? waterRange : new Range(1, 3);
+        this.goldRange = goldRange != null ? goldRange : new Range(1, 3);
+        this.requestFoodRange = new Range(2, 5);
+        this.requestWaterRange = new Range(2, 5);
+        this.requestGoldRange = new Range(2, 5);
     }
 
     /**

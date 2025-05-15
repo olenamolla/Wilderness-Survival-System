@@ -131,7 +131,7 @@ import java.util.*;
             int strength = res[0];
             int food = res[1];
             int water = res[2];
-            int gold = 100; 
+            int gold = 25; // default starting gold
 
 
             Player player = new Player(name, vision, brain, gameMap, strength, food, water, gold);

@@ -100,15 +100,15 @@ public abstract class Vision {
     
     // === Utility methods to check for items on a square ===
     protected boolean hasFood(MapSquare square) {
-        return square.hasItemOfType("Food Bonus");
+        return square != null && square.hasItemOfType("Food Bonus");
     }
 
     protected boolean hasWater(MapSquare square) {
-        return square.hasItemOfType("Water Bonus");
+        return square != null && square.hasItemOfType("Water Bonus");
     }
 
     protected boolean hasGold(MapSquare square) {
-        return square.hasItemOfType("Gold Bonus");
+        return square != null && square.hasItemOfType("Gold Bonus");
     }
 
     

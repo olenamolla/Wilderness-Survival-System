@@ -99,16 +99,10 @@ public class GameMap {
     }
 
     public void printMap() {
-        System.out.println("[DEBUG] Entering GameMap.printMap()");
-        System.out.flush();
-        System.out.println("\n\n");
-        System.out.flush();
-        System.out.println("==========================================");
-        System.out.flush();
+        System.out.println("\n==========================================");
         System.out.println("                MAP VIEW                  ");
-        System.out.flush();
         System.out.println("==========================================");
-        System.out.flush();
+        
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 MapSquare square = grid[x][y];
@@ -122,7 +116,7 @@ public class GameMap {
                     case SWAMP -> "SW";
                 };
 
-                // Bonus codes (max 1 shown, or more if you want)
+                // Bonus codes (max 1 shown)
                 String bonusCode = "-";
                 for (Item item : square.getItems()) {
                     if (item.getName().contains("Food")) { bonusCode = "F"; break; }
@@ -141,29 +135,19 @@ public class GameMap {
 
                 // Print formatted square
                 System.out.print(String.format("%s-%s-%s | ", terrainCode, bonusCode, traderCode));
-                System.out.flush();
             }
             System.out.println(); // Newline per row
-            System.out.flush();
         }
+        
         System.out.println("==========================================");
-        System.out.flush();
         System.out.println("Legend:");
-        System.out.flush();
         System.out.println("Terrain: PL=Plains, MO=Mountain, FO=Forest, DE=Desert, SW=Swamp");
-        System.out.flush();
-        System.out.println("Bonus: F=Food, W=Water, G=Gold");
-        System.out.flush();
-        System.out.println("Trader: TG=Greedy, TI=Impatient, TR=Regular");
-        System.out.flush();
-        System.out.println("==========================================\n\n");
-        System.out.flush();
-        System.out.println("[DEBUG] Exiting GameMap.printMap()");
-        System.out.flush();
+        System.out.println("Bonus:   F=Food, W=Water, G=Gold");
+        System.out.println("Trader:  TG=Greedy, TI=Impatient, TR=Regular");
+        System.out.println("==========================================\n");
     }
 
-
-     /**
+    /**
      * Retrieves the MapSquare at a specific coordinate.
      * @param x X-coordinate
      * @param y Y-coordinate
@@ -172,10 +156,8 @@ public class GameMap {
     public MapSquare getSquare(int x, int y) {
         if (x >= 0 && x < width && y >= 0 && y < height) {
             return grid[x][y];
-        } else {
-            System.out.println("[GameMap] Attempted to access invalid coordinates: (" + x + ", " + y + ")");
-            return null;
         }
+        return null;  // Silently return null for invalid coordinates
     }
 
     /**

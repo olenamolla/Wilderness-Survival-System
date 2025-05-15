@@ -77,26 +77,32 @@ public class Player {
     public void takeTurn() {
         if (hasFinished()) return;
 
+        System.out.println("\n=== " + name + "'s Turn ===");
+        System.out.println("Current Position: (" + x + "," + y + ")");
+        System.out.println("Current Resources: " + inventory.toString());
+        System.out.println("Current Strength: " + strength);
+
         if (!hasAnyLegalMove()) {
             finished = true;
             System.out.println("[Player] " + name + " has no legal moves left and perished!");
             return;
         }
 
-        turnsTaken++; // Increment the turn count
+        turnsTaken++;
         
         MoveDirection direction = brain.makeMove(map, this);
+        System.out.println("Moving " + direction + "...");
         move(direction);
 
         if (strength <= 0) {
             finished = true;
             System.out.println("[Player] " + name + " ran out of strength and collapsed!");
-
         } else if (x == map.getWidth() - 1) {
             finished = true;
             reachedGoal = true;
-            System.out.println("[Player] " + name + " reached the easter edge!");
+            System.out.println("[Player] " + name + " reached the eastern edge!");
         }
+        System.out.println("=== End of " + name + "'s Turn ===\n");
     }
 
     /**
@@ -105,23 +111,22 @@ public class Player {
      * @param dir The direction to move
      */
     public void move(MoveDirection dir) {
-        // Update x and y based on MoveDirection
         int newX = x + dir.getXChange();
         int newY = y + dir.getYChange();
 
-        // Apply terrain costs at the new location
         MapSquare targetSquare = map.getSquare(newX, newY);
         if (targetSquare == null || !targetSquare.isEnterable()) {
+            System.out.println("Cannot move to (" + newX + "," + newY + ") - square is not enterable");
             return;
         }
 
         x = newX;
         y = newY;
 
+        System.out.println("Entered " + targetSquare.getTerrain().getTerrainType() + " at (" + x + "," + y + ")");
         applyTerrainCost(targetSquare);
         handleBonuses(targetSquare);
         handleTrade(targetSquare);
-    
     }
 
     /**
@@ -157,6 +162,7 @@ public class Player {
     */
     private void handleBonuses(MapSquare square) {
         for (Item item : square.getItems()) {
+            System.out.println("Found " + item.getName() + "!");
             item.applyTo(this);
         }
         square.getItems().clear();
@@ -171,9 +177,11 @@ public class Player {
     private void handleTrade(MapSquare square) {
         if (square.hasTrader()) {
             Trader trader = square.getTrader();
-
+            String traderType = trader.getClass().getSimpleName();
+            System.out.println("\nFound " + traderType + " at (" + x + "," + y + ")");
+            
             tradersMet++;
-            traderTypesEncountered.add(trader.getClass().getSimpleName());
+            traderTypesEncountered.add(traderType);
 
             brain.initiateTrade(this, trader);
         }

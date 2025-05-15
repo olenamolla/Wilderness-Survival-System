@@ -85,8 +85,10 @@ public class TradeOffer {
      * Useful for debugging and showing the trade to the player.
      */
     public void printOffer() {
-        System.out.println("[TradeOffer] Offer Details:");
-        System.out.println("- Offering: " + foodOffered + " food, " + waterOffered + " water, " + goldOffered + " gold");
-        System.out.println("- Requesting: " + foodRequested + " food, " + waterRequested + " water, " + goldRequested + " gold");
+        System.out.println("\nTrade Offer Details:");
+        System.out.println("-------------------");
+        System.out.println("Offering:  " + foodOffered + " food, " + waterOffered + " water, " + goldOffered + " gold");
+        System.out.println("Requesting: " + foodRequested + " food, " + waterRequested + " water, " + goldRequested + " gold");
+        System.out.println("-------------------\n");
     }
 }
