@@ -40,11 +40,11 @@ public class Player {
     private boolean reachedGoal = false; // Flag to check if the player has reached the goal
     private boolean finished = false; // Flag to check if the player has finished the game
 
-    private int turnsTaken = 0;
-    private int tradersMet = 0;
-    private List<String> traderTypesEncountered = new ArrayList<>();
-    private List<String> terrainsPassed = new ArrayList<>();
-    private Map<String, Integer> terrainStrengthLoss = new HashMap<>();
+    private int turnsTaken = 0;     // Total number of turns the player survived
+    private int tradersMet = 0;     // Count of traders encountered
+    private List<String> traderTypesEncountered = new ArrayList<>(); // Types of traders met
+    private List<String> terrainsPassed = new ArrayList<>(); // Names of terrains crossed
+    private Map<String, Integer> terrainStrengthLoss = new HashMap<>(); // Track strength lost per terrain
 
      /**
      * Constructs a player with given starting conditions.
@@ -64,7 +64,7 @@ public class Player {
         this.map = map;
         this.maxStrength = startStrength;
         this.strength = startStrength;
-        this.inventory = new Inventory(maxfood, maxwater, maxgold);
+        this.inventory = new Inventory(maxfood, maxwater, maxgold); // Create inventory with max resources
         this.x = 0; // Starting position: West edge
         this.y = map.getHeight() / 2; // Center vertically
     }
@@ -75,7 +75,7 @@ public class Player {
      * Ends the game if strength is depleted or the player reaches the goal.
      */
     public void takeTurn() {
-        if (hasFinished()) return;
+        if (hasFinished()) return;  // Exit if game already over for player
 
         System.out.println("\n=== " + name + "'s Turn ===");
         System.out.println("Current Position: (" + x + "," + y + ")");
@@ -90,10 +90,12 @@ public class Player {
 
         turnsTaken++;
         
+        // Let brain decide next move
         MoveDirection direction = brain.makeMove(map, this);
         System.out.println("Moving " + direction + "...");
         move(direction);
 
+        // Check game ending conditions
         if (strength <= 0) {
             finished = true;
             System.out.println("[Player] " + name + " ran out of strength and collapsed!");
@@ -124,9 +126,9 @@ public class Player {
         y = newY;
 
         System.out.println("Entered " + targetSquare.getTerrain().getTerrainType() + " at (" + x + "," + y + ")");
-        applyTerrainCost(targetSquare);
-        handleBonuses(targetSquare);
-        handleTrade(targetSquare);
+        applyTerrainCost(targetSquare); // Lose strength/food/water
+        handleBonuses(targetSquare);    // Collect items
+        handleTrade(targetSquare);      // Trade if trader exists
     }
 
     /**
@@ -214,6 +216,7 @@ public class Player {
     }
 
 
+    // === Resource Modification ===
 
     /**
      * Increases player's food in inventory.
@@ -239,6 +242,8 @@ public class Player {
         inventory.addGold(amount);
     }
 
+    // === Status Checkers ===
+    
     /**
      * Checks whether the player has finished playing.
      * @return True if player is done (either reached goal or died)
