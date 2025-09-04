@@ -1,0 +1,1876 @@
+Welcome to Wilderness Survival System!
+Enter map width: 
+15
+Enter map height: 15
+Select difficulty: [1] Easy, [2] Medium, [3] Hard
+1
+[DEBUG] Creating new GameMap...
+[GameMap] Starting map generation with difficulty: EASY
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (0,0) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,1) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,2) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (0,3) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,4) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (0,5) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,6) with terrain: PLAINS
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,7) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (0,8) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (0,9) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,10) with terrain: PLAINS
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (0,11) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (0,12) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (0,13) with terrain: FOREST
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (0,14) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (1,0) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,1) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,2) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,3) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (1,4) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (1,5) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (1,6) with terrain: FOREST
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (1,7) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (1,8) with terrain: MOUNTAIN
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,9) with terrain: DESERT
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (1,10) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,11) with terrain: DESERT
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (1,12) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (1,13) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (1,14) with terrain: PLAINS
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,0) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (2,1) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (2,2) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,3) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (2,4) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,5) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,6) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,7) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (2,8) with terrain: SWAMP
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,9) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (2,10) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (2,11) with terrain: DESERT
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (2,12) with terrain: PLAINS
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (2,13) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (2,14) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (3,0) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (3,1) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (3,2) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (3,3) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (3,4) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (3,5) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (3,6) with terrain: SWAMP
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (3,7) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (3,8) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (3,9) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (3,10) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (3,11) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (3,12) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (3,13) with terrain: PLAINS
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (3,14) with terrain: DESERT
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (4,0) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (4,1) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (4,2) with terrain: SWAMP
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (4,3) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (4,4) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (4,5) with terrain: SWAMP
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (4,6) with terrain: SWAMP
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (4,7) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (4,8) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (4,9) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (4,10) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (4,11) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (4,12) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (4,13) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (4,14) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (5,0) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (5,1) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (5,2) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (5,3) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (5,4) with terrain: PLAINS
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (5,5) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (5,6) with terrain: FOREST
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (5,7) with terrain: DESERT
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (5,8) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (5,9) with terrain: MOUNTAIN
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (5,10) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (5,11) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (5,12) with terrain: DESERT
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (5,13) with terrain: FOREST
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (5,14) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (6,0) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (6,1) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (6,2) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (6,3) with terrain: DESERT
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (6,4) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (6,5) with terrain: FOREST
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (6,6) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (6,7) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (6,8) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (6,9) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (6,10) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (6,11) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (6,12) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (6,13) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (6,14) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (7,0) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (7,1) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (7,2) with terrain: SWAMP
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (7,3) with terrain: DESERT
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (7,4) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (7,5) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (7,6) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (7,7) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (7,8) with terrain: PLAINS
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (7,9) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (7,10) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (7,11) with terrain: DESERT
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (7,12) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (7,13) with terrain: SWAMP
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (7,14) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (8,0) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (8,1) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (8,2) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (8,3) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (8,4) with terrain: DESERT
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (8,5) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (8,6) with terrain: FOREST
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (8,7) with terrain: FOREST
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (8,8) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (8,9) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (8,10) with terrain: PLAINS
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (8,11) with terrain: PLAINS
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (8,12) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (8,13) with terrain: DESERT
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (8,14) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (9,0) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (9,1) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (9,2) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (9,3) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (9,4) with terrain: FOREST
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (9,5) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (9,6) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (9,7) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (9,8) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (9,9) with terrain: SWAMP
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (9,10) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (9,11) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (9,12) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (9,13) with terrain: FOREST
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (9,14) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (10,0) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (10,1) with terrain: PLAINS
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (10,2) with terrain: PLAINS
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (10,3) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (10,4) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (10,5) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (10,6) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (10,7) with terrain: MOUNTAIN
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (10,8) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (10,9) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (10,10) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (10,11) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (10,12) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (10,13) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (10,14) with terrain: FOREST
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (11,0) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (11,1) with terrain: SWAMP
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (11,2) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (11,3) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (11,4) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (11,5) with terrain: DESERT
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (11,6) with terrain: PLAINS
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (11,7) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (11,8) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (11,9) with terrain: SWAMP
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (11,10) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (11,11) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (11,12) with terrain: FOREST
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (11,13) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (11,14) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (12,0) with terrain: DESERT
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (12,1) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (12,2) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (12,3) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (12,4) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (12,5) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (12,6) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (12,7) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (12,8) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (12,9) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (12,10) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (12,11) with terrain: FOREST
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (12,12) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (12,13) with terrain: PLAINS
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (12,14) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (13,0) with terrain: FOREST
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (13,1) with terrain: SWAMP
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (13,2) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (13,3) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (13,4) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (13,5) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (13,6) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (13,7) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (13,8) with terrain: PLAINS
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (13,9) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (13,10) with terrain: PLAINS
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (13,11) with terrain: MOUNTAIN
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (13,12) with terrain: MOUNTAIN
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (13,13) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (13,14) with terrain: SWAMP
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (14,0) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (14,1) with terrain: FOREST
+[MapSquare] Trader set: ImpatientTrader
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (14,2) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (14,3) with terrain: PLAINS
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (14,4) with terrain: SWAMP
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (14,5) with terrain: SWAMP
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: PLAINS
+[MapSquare] New square created at (14,6) with terrain: PLAINS
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (14,7) with terrain: DESERT
+[MapSquare] Trader set: RegularTrader
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (14,8) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (14,9) with terrain: DESERT
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: SWAMP
+[MapSquare] New square created at (14,10) with terrain: SWAMP
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (14,11) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[Terrain] Created terrain of type: DESERT
+[MapSquare] New square created at (14,12) with terrain: DESERT
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Gold Bonus
+[MapSquare] Trader set: GreedyTrader
+[Terrain] Created terrain of type: FOREST
+[MapSquare] New square created at (14,13) with terrain: FOREST
+[MapSquare] Item added: Food Bonus
+[MapSquare] Item added: Water Bonus
+[MapSquare] Item added: Gold Bonus
+[Terrain] Created terrain of type: MOUNTAIN
+[MapSquare] New square created at (14,14) with terrain: MOUNTAIN
+[MapSquare] Item added: Food Bonus
+[GameMap] Map generation complete.
+[DEBUG] About to print map from setup()...
+
+==========================================
+                MAP VIEW                  
+==========================================
+SW-F-TR | FO-W--- | PL-W-TR | MO----- | DE-F--- | PL-W--- | DE-F--- | PL-W--- | DE-F--- | FO-F-TI | MO-W--- | FO-F--- | DE----- | FO---TG | DE-W-TG | 
+PL-W-TG | DE-F--- | MO-W--- | FO-F--- | DE-F--- | PL-F--- | DE-F--- | DE-F--- | DE-F--- | MO-F--- | PL---TI | SW----- | SW-F--- | SW----- | FO---TI | 
+PL-W-TI | DE-F--- | SW-F--- | FO-W--- | SW----- | FO-G--- | PL-F--- | SW----- | SW-W--- | MO-G--- | PL-G--- | SW-F--- | FO-F--- | FO-F--- | SW-F--- | 
+FO-F--- | DE-F--- | PL-F--- | FO-F-TG | MO-F-TG | DE-F--- | DE---TI | DE---TI | MO-F--- | SW-W--- | MO-F-TR | DE-F--- | MO-F--- | MO-F--- | PL-G--- | 
+PL-F--- | MO-F--- | MO-G--- | MO-F--- | MO----- | PL----- | MO-W--- | PL-F--- | DE----- | FO----- | FO-F--- | FO-F--- | SW-F--- | MO-F--- | SW-G--- | 
+MO----- | MO-F--- | PL-W--- | MO-F--- | SW----- | MO-W--- | FO----- | SW-W--- | SW-F--- | PL-F--- | SW-F--- | DE---TR | DE-F--- | PL-F-TI | SW-F--- | 
+PL----- | FO----- | PL-W-TG | SW-G--- | SW----- | FO----- | MO-F--- | MO-F--- | FO-W-TR | MO-F-TI | MO-F-TR | PL-G--- | DE-F--- | PL-W-TG | PL-W--- | 
+PL-F--- | PL-F-TR | PL-F--- | PL-F--- | PL-F--- | DE-G-TG | DE-W--- | FO-G-TI | FO---TI | MO-G--- | MO-W--- | DE-F--- | DE-W--- | DE-W-TG | DE---TR | 
+FO-F-TI | MO---TI | SW----- | SW-W--- | FO-F-TI | FO-F--- | SW-F--- | PL----- | MO-F--- | DE-W--- | FO-F--- | PL-W--- | PL-W-TI | PL----- | MO-F--- | 
+FO-F--- | DE----- | PL-F--- | SW-W--- | FO-G-TG | MO---TI | MO-F--- | DE-F-TG | MO-G--- | SW----- | DE-F-TR | SW----- | DE-F--- | FO-F--- | DE-W--- | 
+PL---TI | FO-G-TI | FO-F-TI | DE-W-TI | MO----- | MO----- | SW-F--- | SW-W--- | PL-G--- | MO-F-TG | FO-G--- | DE-F--- | SW-F--- | PL-F--- | SW-W--- | 
+FO-F--- | DE---TR | DE----- | FO-F--- | FO-G--- | MO-F--- | PL-F--- | DE----- | PL----- | SW-F--- | MO-F-TI | DE-F-TI | FO----- | MO----- | DE-F--- | 
+MO-W--- | PL-W--- | PL----- | MO-G--- | SW-F--- | DE----- | FO-F--- | FO-W--- | DE-F--- | PL-F--- | DE-W-TR | FO----- | PL-W--- | MO-G-TR | DE-F-TG | 
+FO----- | DE-F--- | SW-W--- | PL----- | FO-W--- | FO----- | PL-F-TR | SW-G-TI | DE-G--- | FO----- | SW-F--- | MO-F--- | PL----- | SW-F--- | FO-F--- | 
+PL-W--- | PL----- | MO-F--- | DE---TR | SW-F--- | SW-F--- | FO-W--- | PL-F--- | MO-F-TR | PL-F--- | FO-G--- | PL-F-TI | PL-W-TR | SW---TR | MO-F--- | 
+==========================================
+Legend:
+Terrain: PL=Plains, MO=Mountain, FO=Forest, DE=Desert, SW=Swamp
+Bonus:   F=Food, W=Water, G=Gold
+Trader:  TG=Greedy, TI=Impatient, TR=Regular
+==========================================
+
+[DEBUG] Map printed from setup()
+How many players? 4
+
+Setting up Player #1
+Enter player name: 
+Dr.J
+Select Brain: [1] Greedy [2] Social [3] Survival
+2
+Select Vision: [1] Cautious [2] Greedy [3] Extended
+3
+Setting up Player #2
+Enter player name: 
+Olena
+Select Brain: [1] Greedy [2] Social [3] Survival
+1
+Select Vision: [1] Cautious [2] Greedy [3] Extended
+1
+Setting up Player #3
+Enter player name: 
+Emily
+Select Brain: [1] Greedy [2] Social [3] Survival
+3
+Select Vision: [1] Cautious [2] Greedy [3] Extended
+1
+Setting up Player #4
+Enter player name: 
+Alexander
+Select Brain: [1] Greedy [2] Social [3] Survival
+2
+Select Vision: [1] Cautious [2] Greedy [3] Extended
+1
+
+
+
+
+=== Dr.J's Turn ===
+Current Position: (0,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 50
+[SocialBrain] Moving toward trader at (1,7)
+Moving EAST...
+Entered PLAINS at (1,7)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Dr.J
+
+Found RegularTrader at (1,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 2 water, 1 gold
+Requesting: 2 food, 2 water, 4 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (0,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 50
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 1 water, 1 gold
+Requesting: 4 food, 2 water, 2 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (0,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 50
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 1 water, 2 gold
+Requesting: 2 food, 4 water, 4 gold
+-------------------
+
+[SurvivalBrain] Rejecting trade. Too risky or not worth it.
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (0,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 50
+[SocialBrain] Moving toward trader at (1,7)
+Moving EAST...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 20/20, Water: 19/20, Gold: 25/25
+Current Strength: 49
+[SocialBrain] Moving toward trader at (2,6)
+Moving NORTH...
+Entered FOREST at (1,6)
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 19/20, Water: 19/20, Gold: 25/25
+Current Strength: 49
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (2,7)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 19/20, Water: 19/20, Gold: 25/25
+Current Strength: 49
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (2,7)
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 19/20, Water: 19/20, Gold: 25/25
+Current Strength: 49
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (1,6)
+Current Resources: Food: 18/20, Water: 17/20, Gold: 25/25
+Current Strength: 47
+[SocialBrain] Moving toward trader at (2,6)
+Moving EAST...
+Entered PLAINS at (2,6)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Dr.J
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Dr.J
+
+Found GreedyTrader at (2,6)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 1 gold
+Requesting: 2 food, 2 water, 4 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (2,7)
+Current Resources: Food: 20/20, Water: 18/20, Gold: 25/25
+Current Strength: 48
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (3,7)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Olena
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (2,7)
+Current Resources: Food: 18/20, Water: 18/20, Gold: 25/25
+Current Strength: 48
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (3,7)
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 18/20, Water: 18/20, Gold: 25/25
+Current Strength: 48
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (2,6)
+Current Resources: Food: 17/20, Water: 20/20, Gold: 25/25
+Current Strength: 46
+[Path] New empty path created.
+[Path] Step added: NORTHEAST (Movement Cost: +3, Food Cost: +3, Water Cost: +3)
+[Path] New empty path created.
+[Path] Step added: EAST (Movement Cost: +4, Food Cost: +3, Water Cost: +3)
+[Path] Step added: SOUTHEAST (Movement Cost: +1, Food Cost: +1, Water Cost: +1)
+[SocialBrain] No trader — moving toward food (Path Summary): [Path] Summary: EAST -> SOUTHEAST -> END | Total Movement: 5, Food: 4, Water: 4
+Moving EAST...
+Entered SWAMP at (3,6)
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Dr.J
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (3,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 47
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (4,7)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Olena
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (3,7)
+Current Resources: Food: 17/20, Water: 17/20, Gold: 25/25
+Current Strength: 47
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered PLAINS at (4,7)
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 17/20, Water: 17/20, Gold: 25/25
+Current Strength: 47
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (3,6)
+Current Resources: Food: 14/20, Water: 17/20, Gold: 25/25
+Current Strength: 42
+[SocialBrain] Moving toward trader at (5,7)
+Moving EAST...
+Entered SWAMP at (4,6)
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (4,7)
+Current Resources: Food: 20/20, Water: 20/20, Gold: 25/25
+Current Strength: 46
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (5,7)
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Olena
+
+Found GreedyTrader at (5,7)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 1 gold
+Requesting: 1 food, 1 water, 7 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (4,7)
+Current Resources: Food: 16/20, Water: 16/20, Gold: 25/25
+Current Strength: 46
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (5,7)
+
+Found GreedyTrader at (5,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 1 water, 1 gold
+Requesting: 1 food, 2 water, 7 gold
+-------------------
+
+[SurvivalBrain] Rejecting trade. Too risky or not worth it.
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 16/20, Water: 16/20, Gold: 25/25
+Current Strength: 46
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (4,6)
+Current Resources: Food: 11/20, Water: 14/20, Gold: 25/25
+Current Strength: 38
+[SocialBrain] Moving toward trader at (5,7)
+Moving SOUTH...
+Entered PLAINS at (4,7)
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (5,7)
+Current Resources: Food: 18/20, Water: 16/20, Gold: 25/25
+Current Strength: 44
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (6,7)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (5,7)
+Current Resources: Food: 14/20, Water: 12/20, Gold: 25/25
+Current Strength: 44
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (6,7)
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 15/20, Water: 15/20, Gold: 25/25
+Current Strength: 45
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (4,7)
+Current Resources: Food: 10/20, Water: 13/20, Gold: 25/25
+Current Strength: 37
+[SocialBrain] Moving toward trader at (5,7)
+Moving EAST...
+Entered DESERT at (5,7)
+
+Found GreedyTrader at (5,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 2 water, 1 gold
+Requesting: 1 food, 1 water, 6 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (6,7)
+Current Resources: Food: 16/20, Water: 20/20, Gold: 25/25
+Current Strength: 42
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered FOREST at (7,7)
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Olena
+
+Found ImpatientTrader at (7,7)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 2 gold
+Requesting: 4 food, 3 water, 2 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (6,7)
+Current Resources: Food: 12/20, Water: 8/20, Gold: 25/25
+Current Strength: 42
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered FOREST at (7,7)
+
+Found ImpatientTrader at (7,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 2 water, 2 gold
+Requesting: 5 food, 5 water, 2 gold
+-------------------
+
+[SurvivalBrain] Rejecting trade. Too risky or not worth it.
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 14/20, Water: 14/20, Gold: 25/25
+Current Strength: 44
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (5,7)
+Current Resources: Food: 8/20, Water: 9/20, Gold: 25/25
+Current Strength: 35
+[SocialBrain] Moving toward trader at (7,7)
+Moving EAST...
+Entered DESERT at (6,7)
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (7,7)
+Current Resources: Food: 14/20, Water: 18/20, Gold: 25/25
+Current Strength: 40
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered FOREST at (8,7)
+
+Found ImpatientTrader at (8,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 1 water, 2 gold
+Requesting: 3 food, 2 water, 5 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (7,7)
+Current Resources: Food: 10/20, Water: 6/20, Gold: 25/25
+Current Strength: 40
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered FOREST at (8,7)
+
+Found ImpatientTrader at (8,7)
+
+Trade Offer Details:
+-------------------
+Offering:  3 food, 2 water, 1 gold
+Requesting: 5 food, 3 water, 3 gold
+-------------------
+
+[SurvivalBrain] Rejecting trade. Too risky or not worth it.
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 13/20, Water: 13/20, Gold: 25/25
+Current Strength: 43
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (6,7)
+Current Resources: Food: 6/20, Water: 5/20, Gold: 25/25
+Current Strength: 33
+[SocialBrain] Moving toward trader at (7,7)
+Moving EAST...
+Entered FOREST at (7,7)
+
+Found ImpatientTrader at (7,7)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 1 gold
+Requesting: 3 food, 3 water, 2 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (8,7)
+Current Resources: Food: 12/20, Water: 16/20, Gold: 25/25
+Current Strength: 38
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered MOUNTAIN at (9,7)
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (8,7)
+Current Resources: Food: 8/20, Water: 4/20, Gold: 25/25
+Current Strength: 38
+[SurvivalBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered MOUNTAIN at (9,7)
+=== End of Emily's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 12/20, Water: 12/20, Gold: 25/25
+Current Strength: 42
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (7,7)
+Current Resources: Food: 4/20, Water: 3/20, Gold: 25/25
+Current Strength: 31
+[SocialBrain] Moving toward trader at (8,7)
+Moving EAST...
+Entered FOREST at (8,7)
+
+Found ImpatientTrader at (8,7)
+
+Trade Offer Details:
+-------------------
+Offering:  3 food, 2 water, 2 gold
+Requesting: 2 food, 3 water, 2 gold
+-------------------
+
+[SocialBrain] Accepting trade. Gain (9) is fair or slightly better than cost (9)
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (9,7)
+Current Resources: Food: 9/20, Water: 13/20, Gold: 25/25
+Current Strength: 35
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered MOUNTAIN at (10,7)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Emily's Turn ===
+Current Position: (9,7)
+Current Resources: Food: 5/20, Water: 1/20, Gold: 25/25
+Current Strength: 35
+[Player] Emily has no legal moves left and perished!
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 11/20, Water: 11/20, Gold: 25/25
+Current Strength: 41
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (8,7)
+Current Resources: Food: 3/20, Water: 3/20, Gold: 25/25
+Current Strength: 29
+[SocialBrain] Moving toward trader at (9,6)
+Moving NORTH...
+Entered FOREST at (8,6)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Dr.J
+
+Found RegularTrader at (8,6)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 2 water, 1 gold
+Requesting: 2 food, 2 water, 4 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (10,7)
+Current Resources: Food: 6/20, Water: 20/20, Gold: 25/25
+Current Strength: 32
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (11,7)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 10/20, Water: 10/20, Gold: 25/25
+Current Strength: 40
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (8,6)
+Current Resources: Food: 1/20, Water: 11/20, Gold: 25/25
+Current Strength: 27
+[SocialBrain] Moving toward trader at (9,6)
+Moving EAST...
+Entered MOUNTAIN at (9,6)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+
+Found ImpatientTrader at (9,6)
+
+Trade Offer Details:
+-------------------
+Offering:  3 food, 2 water, 1 gold
+Requesting: 3 food, 4 water, 3 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (11,7)
+Current Resources: Food: 14/20, Water: 16/20, Gold: 25/25
+Current Strength: 30
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (12,7)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+=== End of Olena's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 9/20, Water: 9/20, Gold: 25/25
+Current Strength: 39
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (9,6)
+Current Resources: Food: 11/20, Water: 8/20, Gold: 25/25
+Current Strength: 24
+[SocialBrain] Moving toward trader at (10,6)
+Moving EAST...
+Entered MOUNTAIN at (10,6)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+
+Found RegularTrader at (10,6)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 2 gold
+Requesting: 2 food, 4 water, 3 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (12,7)
+Current Resources: Food: 12/20, Water: 20/20, Gold: 25/25
+Current Strength: 28
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (13,7)
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Olena
+
+Found GreedyTrader at (13,7)
+
+Trade Offer Details:
+-------------------
+Offering:  3 food, 1 water, 2 gold
+Requesting: 1 food, 1 water, 6 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+=== End of Olena's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 8/20, Water: 8/20, Gold: 25/25
+Current Strength: 38
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (10,6)
+Current Resources: Food: 18/20, Water: 5/20, Gold: 25/25
+Current Strength: 21
+[SocialBrain] Moving toward trader at (11,5)
+Moving NORTH...
+Entered SWAMP at (10,5)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Dr.J
+=== End of Dr.J's Turn ===
+
+
+=== Olena's Turn ===
+Current Position: (13,7)
+Current Resources: Food: 10/20, Water: 20/20, Gold: 25/25
+Current Strength: 26
+[GreedyBrain] No preferred targets — moving EAST
+Moving EAST...
+Entered DESERT at (14,7)
+
+Found RegularTrader at (14,7)
+
+Trade Offer Details:
+-------------------
+Offering:  2 food, 1 water, 2 gold
+Requesting: 3 food, 2 water, 3 gold
+-------------------
+
+[GreedyBrain] Rejecting trade. Not profitable enough.
+[Player] Olena reached the eastern edge!
+=== End of Olena's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 7/20, Water: 7/20, Gold: 25/25
+Current Strength: 37
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (10,5)
+Current Resources: Food: 20/20, Water: 2/20, Gold: 25/25
+Current Strength: 17
+[SocialBrain] Moving toward trader at (11,5)
+Moving EAST...
+Entered DESERT at (11,5)
+
+Found RegularTrader at (11,5)
+
+Trade Offer Details:
+-------------------
+Offering:  3 food, 2 water, 2 gold
+Requesting: 3 food, 4 water, 2 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 6/20, Water: 6/20, Gold: 25/25
+Current Strength: 36
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (11,5)
+Current Resources: Food: 18/20, Water: 2/20, Gold: 25/25
+Current Strength: 15
+[SocialBrain] Moving toward trader at (13,5)
+Moving EAST...
+Entered DESERT at (12,5)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+=== End of Dr.J's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 5/20, Water: 5/20, Gold: 25/25
+Current Strength: 35
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (12,5)
+Current Resources: Food: 20/20, Water: 2/20, Gold: 25/25
+Current Strength: 13
+[SocialBrain] Moving toward trader at (13,5)
+Moving EAST...
+Entered PLAINS at (13,5)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Dr.J
+
+Found ImpatientTrader at (13,5)
+
+Trade Offer Details:
+-------------------
+Offering:  1 food, 2 water, 1 gold
+Requesting: 3 food, 2 water, 5 gold
+-------------------
+
+[SocialBrain] Rejecting trade. Deal seems unfair.
+=== End of Dr.J's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 4/20, Water: 4/20, Gold: 25/25
+Current Strength: 34
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Dr.J's Turn ===
+Current Position: (13,5)
+Current Resources: Food: 20/20, Water: 11/20, Gold: 25/25
+Current Strength: 12
+[Path] New empty path created.
+[Path] Step added: EAST (Movement Cost: +4, Food Cost: +3, Water Cost: +3)
+java.lang.NullPointerException: Cannot invoke "wss.map.MapSquare.getX()" because "<local5>" is null
+        at wss.vision.ExtendedVision.closestFood(ExtendedVision.java:73)
+        at wss.brain.SocialBrain.makeMove(SocialBrain.java:42)
+        at wss.player.Player.takeTurn(Player.java:93)
+        at wss.game.Game.run(Game.java:163)
+        at wss.game.Main.main(Main.java:13)
+Moving EAST...
+Entered SWAMP at (14,5)
+Found Food Bonus!
+[FoodBonus] Applying food bonus of 10 to player Dr.J
+Found Water Bonus!
+[WaterBonus] Applying water bonus of 10 to player Dr.J
+Found Gold Bonus!
+[GoldBonus] Applying gold bonus of 5 to player Dr.J
+[Player] Dr.J reached the eastern edge!
+=== End of Dr.J's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 3/20, Water: 3/20, Gold: 25/25
+Current Strength: 33
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 2/20, Water: 2/20, Gold: 25/25
+Current Strength: 32
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 1/20, Water: 1/20, Gold: 25/25
+Current Strength: 31
+[SocialBrain] Moving toward trader at (1,7)
+Moving STAY...
+Entered PLAINS at (1,7)
+
+Found RegularTrader at (1,7)
+[SocialBrain] Trader has no offers left.
+=== End of Alexander's Turn ===
+
+
+=== Alexander's Turn ===
+Current Position: (1,7)
+Current Resources: Food: 0/20, Water: 0/20, Gold: 25/25
+Current Strength: 30
+[Player] Alexander has no legal moves left and perished!
+
+Simulation complete!
+
+===== Game Report =====
+Player:          Dr.J
+Turns Taken:     18
+Reached Goal:    Yes
+Brain Strategy:  SocialBrain
+Vision Type:     ExtendedVision
+Food Left:       20
+Water Left:      18
+Gold Collected:  25
+Final Strength:  8
+Traders Met:     10
+Trader Types:    RegularTrader, GreedyTrader, GreedyTrader, ImpatientTrader, ImpatientTrader, RegularTrader, ImpatientTrader, RegularTrader, RegularTrader, ImpatientTrader
+
+Terrains Passed: PLAINS → FOREST → PLAINS → SWAMP → SWAMP → PLAINS → DESERT → DESERT → FOREST → FOREST → FOREST → MOUNTAIN → MOUNTAIN → SWAMP → DESERT → DESERT → PLAINS → SWAMP
+Strength Lost by Terrain:
+  PLAINS    : -4 strength
+  MOUNTAIN  : -6 strength
+  DESERT    : -8 strength
+  SWAMP     : -16 strength
+  FOREST    : -8 strength
+========================
+
+===== Game Report =====
+Player:          Olena
+Turns Taken:     14
+Reached Goal:    Yes
+Brain Strategy:  GreedyBrain
+Vision Type:     CautiousVision
+Food Left:       8
+Water Left:      16
+Gold Collected:  25
+Final Strength:  24
+Traders Met:     6
+Trader Types:    RegularTrader, GreedyTrader, ImpatientTrader, ImpatientTrader, GreedyTrader, RegularTrader
+
+Terrains Passed: PLAINS → PLAINS → PLAINS → PLAINS → DESERT → DESERT → FOREST → FOREST → MOUNTAIN → MOUNTAIN → DESERT → DESERT → DESERT → DESERT
+Strength Lost by Terrain:
+  PLAINS    : -4 strength
+  MOUNTAIN  : -6 strength
+  DESERT    : -12 strength
+  FOREST    : -4 strength
+========================
+
+===== Game Report =====
+Player:          Emily
+Turns Taken:     9
+Reached Goal:    No
+Brain Strategy:  SurvivalBrain
+Vision Type:     CautiousVision
+Food Left:       5
+Water Left:      1
+Gold Collected:  25
+Final Strength:  35
+Traders Met:     4
+Trader Types:    RegularTrader, GreedyTrader, ImpatientTrader, ImpatientTrader
+
+Terrains Passed: PLAINS → PLAINS → PLAINS → PLAINS → DESERT → DESERT → FOREST → FOREST → MOUNTAIN
+Strength Lost by Terrain:
+  PLAINS    : -4 strength
+  MOUNTAIN  : -3 strength
+  DESERT    : -4 strength
+  FOREST    : -4 strength
+========================
+
+===== Game Report =====
+Player:          Alexander
+Turns Taken:     20
+Reached Goal:    No
+Brain Strategy:  SocialBrain
+Vision Type:     CautiousVision
+Food Left:       0
+Water Left:      0
+Gold Collected:  25
+Final Strength:  30
+Traders Met:     20
+Trader Types:    RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader, RegularTrader
+
+Terrains Passed: PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS → PLAINS
+Strength Lost by Terrain:
+  PLAINS    : -20 strength
+========================
+
+Winner(s):
+ - Dr.J
+ - Olena
+
